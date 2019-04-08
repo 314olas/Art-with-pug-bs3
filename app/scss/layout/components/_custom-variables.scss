@@ -1,0 +1,135 @@
+
+@font-face {
+  font-family: 'Proxima Nova Lt';
+  src: url('fonts/proxima/ProximaNova-LightIt.eot');
+  src: local('fonts/proxima/Proxima Nova Light Italic'), local('ProximaNova-LightIt'),
+  url('fonts/proxima/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype'),
+  url('fonts/proxima/ProximaNova-LightIt.woff') format('woff'),
+  url('fonts/proxima/ProximaNova-LightIt.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('fonts/proxima/ProximaNova-RegularIt.eot');
+  src: local('Proxima Nova Regular Italic'), local('ProximaNova-RegularIt'),
+  url('fonts/proxima/ProximaNova-RegularIt.eot?#iefix') format('embedded-opentype'),
+  url('fonts/proxima/ProximaNova-RegularIt.woff') format('woff'),
+  url('fonts/proxima/ProximaNova-RegularIt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+$font-family-sans-serif:  "Proxima Nova Rg";
+$font-family-base: $font-family-sans-serif;
+
+$white:    #fff !default;
+$gray-100: #f2f1f1; //bg (happy client)
+
+$gray-200: #ddd;//about us (headings)
+$gray-300: #ccc;//about us (paragraphs)
+
+$gray-400: #b7b3b3; //text lighten
+$gray-500: #828181; //most of text color
+$gray-600: #444;
+
+$gray-btn-bg: #dddcdc;
+$gray-btn-color:  #a59d9d;
+
+//footer colors
+$gray-700: #333;  //bg info
+$gray-800: #222;
+$gray-900: #101010;
+$black: #111;
+
+$blue: #0061ff; //bg for 'Be'
+$blue-light: #089dea; //bg for footer
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e8538c;  //for social ball
+$red:     #dc3545 !default;
+$orange:  #f34d04;
+$yellow:  #ffba00;
+$green: #54d154;
+$teal:    #20c997 !default;
+$cyan: #00aced; //bg for twitter
+
+
+
+$green-light: #e1f3e1;
+$green-lighten: #3eba3e;
+$green-darker: #2b9b2b;
+$green-dark: #207b20;
+$white-gray: #e6e7e6;
+
+
+
+$slick-arrows-color: #e0dfdf;
+
+$font-size-base: 16px;
+$headings-font-family: "Montserrat";
+
+$brand-primary: $green;
+$brand-success:  $green-darker;
+$brand-info:  $cyan;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:  $orange;
+
+$text-color: $gray-500;
+
+$link-color:  $white;
+$link-hover-color: $white;
+$link-hover-decoration: none;
+
+$font-size-h1: 41px;
+$font-size-h2: 24px;
+$font-size-h3: 21px;
+$font-size-h4: 16px;
+
+$font-size-small: 16px;
+
+$padding-small-vertical:    4px;
+$padding-small-horizontal:  20px;
+
+$padding-large-vertical:    8px !default;
+$padding-large-horizontal:  20px !default;
+
+
+$grid-float-breakpoint: $container-desktop;
+
+$navbar-default-color: $white;
+$navbar-default-bg: transparent;
+$navbar-default-border: none;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg: transparent;
+$navbar-default-toggle-icon-bar-bg: $white;
+$navbar-default-toggle-border-color: $brand-primary;
+
+// Navbar links
+$navbar-default-link-color: $link-color;
+$navbar-default-link-hover-color: $link-hover-color;
+$navbar-default-link-hover-bg: $brand-primary;
+$navbar-default-link-active-color: $link-color;
+$navbar-default-link-active-bg: $brand-primary;
+
+
+$input-border-focus: transparent;
+
+
+$btn-default-color:              #333 !default;
+$btn-default-bg:                 #fff !default;
+$btn-default-border:             #ccc !default;
+
+$btn-primary-bg:                 $brand-primary ;
+$btn-primary-border:             transparent;
+
+$btn-success-color:              #fff ;
+$btn-success-bg:                 $brand-success;
+$btn-success-border:             transparent;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base:         $border-radius-base !default;
+$btn-border-radius-large:        $border-radius-large !default;
+$btn-border-radius-small:        $border-radius-small !default;

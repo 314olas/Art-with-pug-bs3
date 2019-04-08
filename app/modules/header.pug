@@ -1,0 +1,26 @@
+include variables
+include mixins
+
+header
+    .container
+        nav.navbar.navbar-default
+
+            .navbar-header
+                a.logo(href="/")
+                    img(src='img/logo.png' alt='logo')
+                button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false")
+                    span.sr-only
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+
+            .collapse.navbar-collapse(id="navigation")
+
+                +linkList(headerList,1)
+
+                form.search-form.navbar-right
+                    input.form-control.custom-input(type='search' placeholder='Search...' aria-label='Search')
+                    button.search-btn(type="submit")
+                        span.icon-search
+
+

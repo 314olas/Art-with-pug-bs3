@@ -1,0 +1,130 @@
+
+<!---->
+<!--mixin headingWithoutParagraph(title)-->
+<!--    .title-holder.title-decoration.text-center.mb-4.text-uppercase-->
+<!--        h4= title-->
+<!---->
+<!--mixin addImg(arr)-->
+<!--    .container.common-section-->
+<!--        .row.justify-content-center-->
+<!--            .col-lg-10-->
+<!--                .row.grid-->
+<!--                    - for (var i = 0; i < arr.length; i++)-->
+<!--                        .custom-block.col.grid-item(class= arr[i].description)-->
+<!--                            .mb-4-->
+<!--                                a(href=arr[i].path)-->
+<!--                                    .img-holder(style="background-image: url('../../"+arr[i].workImage + "')" )-->
+<!---->
+<!---->
+<!--mixin addsliderItem(obj)-->
+<!--    -for (var i = 0; i < obj.length; i++)-->
+<!--        .slider-item-->
+<!--            .slider-item.text-center-->
+<!--                blockquote-->
+<!--                    q.d-block.mb-4= obj[i].content-->
+<!--                    .d-flex.justify-content-center-->
+<!--                        .img-holder(style="background-image: url('../../"+obj[i].photo + "')" )-->
+<!--                        a.ml-2(href="")-->
+<!--                           cite.description.text-left-->
+<!--                               span-->
+<!--                                   strong= obj[i].name-->
+<!--                               span= obj[i].someText-->
+<!---->
+<!--mixin Logos(arr)-->
+<!--    .row.common-section-->
+<!--        - for (var i = 0; i < arr.length; i++)-->
+<!--            .col-md-6.col-lg-3.d-flex.align-items-center.justify-content-center.mb-5-->
+<!--                a(href= arr[i].link)-->
+<!--                    img(src=arr[i].logo alt=arr[i].logo)-->
+<!---->
+<!--mixin personals(obj, theme)-->
+<!--    .container-->
+<!--        .row.justify-content-center-->
+<!--            -for (var i = 0; i < obj.length; i++)-->
+<!--                .col-md-5.col-lg-2-->
+<!--                    .d-flex.flex-column.align-items-center.mb-5.mb-lg-0-->
+<!--                        .img-holder(style="background-image: url('../../"+obj[i].photo + "')" )-->
+<!--                        .text-white.common-decoration-block-->
+<!--                            p= obj[i].name-->
+<!--                        +social(obj[i].socials, theme)-->
+<!---->
+<!--mixin social(obj, theme)-->
+<!--    if theme == "green"-->
+<!--        .team-social.justify-content-center-->
+<!--            ul.socials-contact.bg-light-green.nav-->
+<!--                each index, item in obj-->
+<!--                    li-->
+<!--                        a(class="bg-for-"+ item href=obj[item])-->
+<!--                            span(class='icon-' + item)-->
+<!--    else-->
+<!--        .team-social.justify-content-center-->
+<!--            ul.socials-contact.bg-light-gray.nav-->
+<!--                each index, item in obj-->
+<!--                    li-->
+<!--                        a(class="bg-for-"+ item href=obj[item])-->
+<!--                            span(class='icon-' + item)-->
+<!---->
+<!--mixin createPost(arr)-->
+<!--    .posts-->
+<!--        -for (var i=0; i < arr.length; i++)-->
+<!--            .d-flex.mb-3-->
+<!--                .img-holder.mr-2(style="background-image: url('../../"+ arr[i].photo + "')" )-->
+<!--                .text-content.d-flex.flex-column.justify-content-center-->
+<!--                    h4= arr[i].title-->
+<!--                    a.btn.btn-sm.text-uppercase.text-white.align-self-start(href="#" class="btn-" + arr[i].color)= arr[i].btnText-->
+<section class="we-do common-section" id="weDo">
+  <div class="container">
+    <div class="common-text-block">
+      <div class="title-decoration text-center">
+        <h3>what we do</h3>
+      </div>
+      <div class="text-center default-content-color">
+        <p>Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <div class="thumbnail-img-top"><span class="icon-camera"></span></div>
+          <div class="caption">
+            <div class="thumbnail-title text-center">
+              <h3>Lorem ipsum</h3>
+            </div>
+            <div class="content text-center">
+              <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor</p>
+            </div>
+          </div>
+          <div class="text-center"><a class="btn btn-sm btn-primary" href="#">Learn more</a></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <div class="thumbnail-img-top"><span class="icon-dashboard"></span></div>
+          <div class="caption">
+            <div class="thumbnail-title text-center">
+              <h3>Lorem ipsum</h3>
+            </div>
+            <div class="content text-center">
+              <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor</p>
+            </div>
+          </div>
+          <div class="text-center"><a class="btn btn-sm btn-primary" href="#">Learn more</a></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <div class="thumbnail-img-top"><span class="icon-briefcase"></span></div>
+          <div class="caption">
+            <div class="thumbnail-title text-center">
+              <h3>Lorem ipsum</h3>
+            </div>
+            <div class="content text-center">
+              <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh  vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor</p>
+            </div>
+          </div>
+          <div class="text-center"><a class="btn btn-sm btn-primary" href="#">Learn more</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

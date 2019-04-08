@@ -1,0 +1,95 @@
+
+<!---->
+<!--mixin headingWithoutParagraph(title)-->
+<!--    .title-holder.title-decoration.text-center.mb-4.text-uppercase-->
+<!--        h4= title-->
+<!---->
+<!--mixin addImg(arr)-->
+<!--    .container.common-section-->
+<!--        .row.justify-content-center-->
+<!--            .col-lg-10-->
+<!--                .row.grid-->
+<!--                    - for (var i = 0; i < arr.length; i++)-->
+<!--                        .custom-block.col.grid-item(class= arr[i].description)-->
+<!--                            .mb-4-->
+<!--                                a(href=arr[i].path)-->
+<!--                                    .img-holder(style="background-image: url('../../"+arr[i].workImage + "')" )-->
+<!---->
+<!---->
+<!--mixin addsliderItem(obj)-->
+<!--    -for (var i = 0; i < obj.length; i++)-->
+<!--        .slider-item-->
+<!--            .slider-item.text-center-->
+<!--                blockquote-->
+<!--                    q.d-block.mb-4= obj[i].content-->
+<!--                    .d-flex.justify-content-center-->
+<!--                        .img-holder(style="background-image: url('../../"+obj[i].photo + "')" )-->
+<!--                        a.ml-2(href="")-->
+<!--                           cite.description.text-left-->
+<!--                               span-->
+<!--                                   strong= obj[i].name-->
+<!--                               span= obj[i].someText-->
+<!---->
+<!--mixin Logos(arr)-->
+<!--    .row.common-section-->
+<!--        - for (var i = 0; i < arr.length; i++)-->
+<!--            .col-md-6.col-lg-3.d-flex.align-items-center.justify-content-center.mb-5-->
+<!--                a(href= arr[i].link)-->
+<!--                    img(src=arr[i].logo alt=arr[i].logo)-->
+<!---->
+<!--mixin personals(obj, theme)-->
+<!--    .container-->
+<!--        .row.justify-content-center-->
+<!--            -for (var i = 0; i < obj.length; i++)-->
+<!--                .col-md-5.col-lg-2-->
+<!--                    .d-flex.flex-column.align-items-center.mb-5.mb-lg-0-->
+<!--                        .img-holder(style="background-image: url('../../"+obj[i].photo + "')" )-->
+<!--                        .text-white.common-decoration-block-->
+<!--                            p= obj[i].name-->
+<!--                        +social(obj[i].socials, theme)-->
+<!---->
+<!--mixin social(obj, theme)-->
+<!--    if theme == "green"-->
+<!--        .team-social.justify-content-center-->
+<!--            ul.socials-contact.bg-light-green.nav-->
+<!--                each index, item in obj-->
+<!--                    li-->
+<!--                        a(class="bg-for-"+ item href=obj[item])-->
+<!--                            span(class='icon-' + item)-->
+<!--    else-->
+<!--        .team-social.justify-content-center-->
+<!--            ul.socials-contact.bg-light-gray.nav-->
+<!--                each index, item in obj-->
+<!--                    li-->
+<!--                        a(class="bg-for-"+ item href=obj[item])-->
+<!--                            span(class='icon-' + item)-->
+<!---->
+<!--mixin createPost(arr)-->
+<!--    .posts-->
+<!--        -for (var i=0; i < arr.length; i++)-->
+<!--            .d-flex.mb-3-->
+<!--                .img-holder.mr-2(style="background-image: url('../../"+ arr[i].photo + "')" )-->
+<!--                .text-content.d-flex.flex-column.justify-content-center-->
+<!--                    h4= arr[i].title-->
+<!--                    a.btn.btn-sm.text-uppercase.text-white.align-self-start(href="#" class="btn-" + arr[i].color)= arr[i].btnText-->
+<header>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="navbar-header"><a class="logo" href="/"><img src="img/logo.png" alt="logo"/></a>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false"><span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      </div>
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="nav navbar-nav">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item active"><a href="#">What we do</a></li>
+          <li class="nav-item"><a href="#">Testimonial</a></li>
+          <li class="nav-item"><a href="#">Contact Us</a></li>
+        </ul>
+        <form class="search-form navbar-right">
+          <input class="form-control custom-input" type="search" placeholder="Search..." aria-label="Search"/>
+          <button class="search-btn" type="submit"><span class="icon-search"></span></button>
+        </form>
+      </div>
+    </nav>
+  </div>
+</header>
