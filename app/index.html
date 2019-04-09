@@ -8,80 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
   </head>
   <body>
+    <div class="loaderArea"><span class="loader"></span></div>
     <div class="wrapper">
-      <!---->
-      <!--mixin headingWithoutParagraph(title)-->
-      <!--    .title-holder.title-decoration.text-center.mb-4.text-uppercase-->
-      <!--        h4= title-->
-      <!---->
-      <!--mixin addImg(arr)-->
-      <!--    .container.common-section-->
-      <!--        .row.justify-content-center-->
-      <!--            .col-lg-10-->
-      <!--                .row.grid-->
-      <!--                    - for (var i = 0; i < arr.length; i++)-->
-      <!--                        .custom-block.col.grid-item(class= arr[i].description)-->
-      <!--                            .mb-4-->
-      <!--                                a(href=arr[i].path)-->
-      <!--                                    .img-holder(style="background-image: url('../../"+arr[i].workImage + "')" )-->
-      <!---->
-      <!---->
-      <!--mixin addsliderItem(obj)-->
-      <!--    -for (var i = 0; i < obj.length; i++)-->
-      <!--        .slider-item-->
-      <!--            .slider-item.text-center-->
-      <!--                blockquote-->
-      <!--                    q.d-block.mb-4= obj[i].content-->
-      <!--                    .d-flex.justify-content-center-->
-      <!--                        .img-holder(style="background-image: url('../../"+obj[i].photo + "')" )-->
-      <!--                        a.ml-2(href="")-->
-      <!--                           cite.description.text-left-->
-      <!--                               span-->
-      <!--                                   strong= obj[i].name-->
-      <!--                               span= obj[i].someText-->
-      <!---->
-      <!--mixin Logos(arr)-->
-      <!--    .row.common-section-->
-      <!--        - for (var i = 0; i < arr.length; i++)-->
-      <!--            .col-md-6.col-lg-3.d-flex.align-items-center.justify-content-center.mb-5-->
-      <!--                a(href= arr[i].link)-->
-      <!--                    img(src=arr[i].logo alt=arr[i].logo)-->
-      <!---->
-      <!--mixin personals(obj, theme)-->
-      <!--    .container-->
-      <!--        .row.justify-content-center-->
-      <!--            -for (var i = 0; i < obj.length; i++)-->
-      <!--                .col-md-5.col-lg-2-->
-      <!--                    .d-flex.flex-column.align-items-center.mb-5.mb-lg-0-->
-      <!--                        .img-holder(style="background-image: url('../../"+obj[i].photo + "')" )-->
-      <!--                        .text-white.common-decoration-block-->
-      <!--                            p= obj[i].name-->
-      <!--                        +social(obj[i].socials, theme)-->
-      <!---->
-      <!--mixin social(obj, theme)-->
-      <!--    if theme == "green"-->
-      <!--        .team-social.justify-content-center-->
-      <!--            ul.socials-contact.bg-light-green.nav-->
-      <!--                each index, item in obj-->
-      <!--                    li-->
-      <!--                        a(class="bg-for-"+ item href=obj[item])-->
-      <!--                            span(class='icon-' + item)-->
-      <!--    else-->
-      <!--        .team-social.justify-content-center-->
-      <!--            ul.socials-contact.bg-light-gray.nav-->
-      <!--                each index, item in obj-->
-      <!--                    li-->
-      <!--                        a(class="bg-for-"+ item href=obj[item])-->
-      <!--                            span(class='icon-' + item)-->
-      <!---->
-      <!--mixin createPost(arr)-->
-      <!--    .posts-->
-      <!--        -for (var i=0; i < arr.length; i++)-->
-      <!--            .d-flex.mb-3-->
-      <!--                .img-holder.mr-2(style="background-image: url('../../"+ arr[i].photo + "')" )-->
-      <!--                .text-content.d-flex.flex-column.justify-content-center-->
-      <!--                    h4= arr[i].title-->
-      <!--                    a.btn.btn-sm.text-uppercase.text-white.align-self-start(href="#" class="btn-" + arr[i].color)= arr[i].btnText-->
       <header>
         <div class="container">
           <nav class="navbar navbar-default">
@@ -113,79 +41,6 @@
           </div>
           <div class="scroll-down-holder text-center"><a class="btn btn-default btn-sm btn-arrow-default" href="#weDo" id="scrollToMain">scroll down<span class="icon-arrow-down"></span></a></div>
         </section>
-        <!---->
-        <!--mixin headingWithoutParagraph(title)-->
-        <!--    .title-holder.title-decoration.text-center.mb-4.text-uppercase-->
-        <!--        h4= title-->
-        <!---->
-        <!--mixin addImg(arr)-->
-        <!--    .container.common-section-->
-        <!--        .row.justify-content-center-->
-        <!--            .col-lg-10-->
-        <!--                .row.grid-->
-        <!--                    - for (var i = 0; i < arr.length; i++)-->
-        <!--                        .custom-block.col.grid-item(class= arr[i].description)-->
-        <!--                            .mb-4-->
-        <!--                                a(href=arr[i].path)-->
-        <!--                                    .img-holder(style="background-image: url('../../"+arr[i].workImage + "')" )-->
-        <!---->
-        <!---->
-        <!--mixin addsliderItem(obj)-->
-        <!--    -for (var i = 0; i < obj.length; i++)-->
-        <!--        .slider-item-->
-        <!--            .slider-item.text-center-->
-        <!--                blockquote-->
-        <!--                    q.d-block.mb-4= obj[i].content-->
-        <!--                    .d-flex.justify-content-center-->
-        <!--                        .img-holder(style="background-image: url('../../"+obj[i].photo + "')" )-->
-        <!--                        a.ml-2(href="")-->
-        <!--                           cite.description.text-left-->
-        <!--                               span-->
-        <!--                                   strong= obj[i].name-->
-        <!--                               span= obj[i].someText-->
-        <!---->
-        <!--mixin Logos(arr)-->
-        <!--    .row.common-section-->
-        <!--        - for (var i = 0; i < arr.length; i++)-->
-        <!--            .col-md-6.col-lg-3.d-flex.align-items-center.justify-content-center.mb-5-->
-        <!--                a(href= arr[i].link)-->
-        <!--                    img(src=arr[i].logo alt=arr[i].logo)-->
-        <!---->
-        <!--mixin personals(obj, theme)-->
-        <!--    .container-->
-        <!--        .row.justify-content-center-->
-        <!--            -for (var i = 0; i < obj.length; i++)-->
-        <!--                .col-md-5.col-lg-2-->
-        <!--                    .d-flex.flex-column.align-items-center.mb-5.mb-lg-0-->
-        <!--                        .img-holder(style="background-image: url('../../"+obj[i].photo + "')" )-->
-        <!--                        .text-white.common-decoration-block-->
-        <!--                            p= obj[i].name-->
-        <!--                        +social(obj[i].socials, theme)-->
-        <!---->
-        <!--mixin social(obj, theme)-->
-        <!--    if theme == "green"-->
-        <!--        .team-social.justify-content-center-->
-        <!--            ul.socials-contact.bg-light-green.nav-->
-        <!--                each index, item in obj-->
-        <!--                    li-->
-        <!--                        a(class="bg-for-"+ item href=obj[item])-->
-        <!--                            span(class='icon-' + item)-->
-        <!--    else-->
-        <!--        .team-social.justify-content-center-->
-        <!--            ul.socials-contact.bg-light-gray.nav-->
-        <!--                each index, item in obj-->
-        <!--                    li-->
-        <!--                        a(class="bg-for-"+ item href=obj[item])-->
-        <!--                            span(class='icon-' + item)-->
-        <!---->
-        <!--mixin createPost(arr)-->
-        <!--    .posts-->
-        <!--        -for (var i=0; i < arr.length; i++)-->
-        <!--            .d-flex.mb-3-->
-        <!--                .img-holder.mr-2(style="background-image: url('../../"+ arr[i].photo + "')" )-->
-        <!--                .text-content.d-flex.flex-column.justify-content-center-->
-        <!--                    h4= arr[i].title-->
-        <!--                    a.btn.btn-sm.text-uppercase.text-white.align-self-start(href="#" class="btn-" + arr[i].color)= arr[i].btnText-->
         <section class="we-do common-section" id="weDo">
           <div class="container">
                     <div class="common-text-block">
@@ -242,7 +97,307 @@
                     </div>
           </div>
         </section>
+        <section class="latest-work common-section">
+          <div class="container">
+                    <div class="common-heading-block">
+                      <div class="title-decoration text-center mb-2 primary-title-color">
+                        <h3>our latest work</h3>
+                      </div>
+                      <div class="text-center text-success">
+                        <p>Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+                      </div>
+                    </div>
+            <div class="text-center">
+              <div class="btn-group btn-filter-group" aria-label="filter-button">
+                <button class="filter btn btn-light active" type="button" data-filter="*">Photography</button>
+                <button class="filter btn btn-light" type="button" data-filter=".nature">Design</button>
+                <button class="filter btn btn-light" type="button" data-filter=".tables">Print</button>
+              </div>
+            </div>
+          </div>
+          <div class="container common-section">
+            <div class="row">
+              <div class="col-lg-offset-1 col-lg-10">
+                <div class="grid">
+                  <div class="custom-block"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center"><a class="btn btn-success btn-arrow" href="#" id="vieMore">View more work<span class="icon-arrow-right"></span></a></div>
+        </section>
+        <section class="testimonials common-section">
+          <div class="container">
+                    <div class="common-text-block">
+                      <div class="title-decoration text-center">
+                        <h3>testimonials</h3>
+                      </div>
+                      <div class="text-center default-content-color">
+                        <p>Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+                      </div>
+                    </div>
+            <div class="row">
+              <div class="col-md-offset-3 col-lg-6">
+                <div class="slider">
+                          <div class="slider-item">
+                            <div class="slider-item text-center">
+                              <blockquote>
+                                <q class="mb-4">Awalnya saya tidak menderita penyakit apapun, namun setelah saya tidak berobat ke klinik tongfang, saya dinyatakan tidak menderita penyakit apapun!</q>
+                                <div class="img-holder" style="background-image: url('../../img/mr-herp(face).png')"><a class="ml-2" href=""></a></div>
+                                <cite class="description text-left"><span><strong>Mr. Herp</strong></span><span>CEO of Meme, Inc.</span></cite>
+                              </blockquote>
+                            </div>
+                          </div>
+                          <div class="slider-item">
+                            <div class="slider-item text-center">
+                              <blockquote>
+                                <q class="mb-4">Awalnya saya tidak menderita penyakit apapun, namun setelah saya tidak berobat ke klinik tongfang, saya dinyatakan tidak menderita penyakit apapun!</q>
+                                <div class="img-holder" style="background-image: url('../../img/mr-herp(face).png')"><a class="ml-2" href=""></a></div>
+                                <cite class="description text-left"><span><strong>Mr. Herp</strong></span><span>CEO of Meme, Inc.</span></cite>
+                              </blockquote>
+                            </div>
+                          </div>
+                          <div class="slider-item">
+                            <div class="slider-item text-center">
+                              <blockquote>
+                                <q class="mb-4">Awalnya saya tidak menderita penyakit apapun, namun setelah saya tidak berobat ke klinik tongfang, saya dinyatakan tidak menderita penyakit apapun!</q>
+                                <div class="img-holder" style="background-image: url('../../img/mr-herp(face).png')"><a class="ml-2" href=""></a></div>
+                                <cite class="description text-left"><span><strong>Mr. Herp</strong></span><span>CEO of Meme, Inc.</span></cite>
+                              </blockquote>
+                            </div>
+                          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="our-client common-section">
+          <div class="container">
+                    <div class="common-text-block">
+                      <div class="title-decoration text-center">
+                        <h3>our happy client</h3>
+                      </div>
+                      <div class="text-center default-content-color">
+                        <p>Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 col-lg-3 mb-5 text-center"><a href="#"><img src="img/google.png" alt="img/google.png"></a></div>
+                      <div class="col-md-6 col-lg-3 mb-5 text-center"><a href="#"><img src="img/yahoo.png" alt="img/yahoo.png"></a></div>
+                      <div class="col-md-6 col-lg-3 mb-5 text-center"><a href="#"><img src="img/Microsoft.png" alt="img/Microsoft.png"></a></div>
+                      <div class="col-md-6 col-lg-3 mb-5 text-center"><a href="#"><img src="img/intel.png" alt="img/intel.png"></a></div>
+                      <div class="col-md-6 col-lg-3 mb-5 text-center"><a href="#"><img src="img/qualcom.png" alt="img/qualcom.png"></a></div>
+                      <div class="col-md-6 col-lg-3 mb-5 text-center"><a href="#"><img src="img/cisco.png" alt="img/cisco.png"></a></div>
+                      <div class="col-md-6 col-lg-3 mb-5 text-center"><a href="#"><img src="img/apple.png" alt="img/apple.png"></a></div>
+                      <div class="col-md-6 col-lg-3 mb-5 text-center"><a href="#"><img src="img/asus.png" alt="img/asus.png"></a></div>
+                    </div>
+          </div>
+          <div class="container text-center"><a class="btn btn-gray btn-arrow" href="#">See all client<span class="icon-arrow-right"></span></a></div>
+        </section>
+        <section class="meet-team bg-primary">
+          <div class="common-section">
+            <div class="container">
+                      <div class="common-heading-block">
+                        <div class="title-decoration text-center mb-2 primary-title-color">
+                          <h3>meet the team</h3>
+                        </div>
+                        <div class="text-center text-success">
+                          <p>Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-offset-1 col-sm-5 col-md-2">
+                          <div class="mb-5 mb-lg-0">
+                            <div class="img-holder" style="background-image: url('../../img/krisna.jpg')"></div>
+                            <div class="text-white common-decoration-block">
+                              <p>Krisna Wijaya</p>
+                            </div>
+                                    <div class="team-social">
+                                      <ul class="socials-contact bg-light-green">
+                                        <li><a class="bg-for-dribbble" href="#"><span class="icon-dribbble"></span></a></li>
+                                        <li><a class="bg-for-behance" href="#"><span class="icon-behance"></span></a></li>
+                                        <li><a class="bg-for-twitter" href="#"><span class="icon-twitter"></span></a></li>
+                                      </ul>
+                                    </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-5 col-md-2">
+                          <div class="mb-5 mb-lg-0">
+                            <div class="img-holder" style="background-image: url('../../img/gabriel.jpg')"></div>
+                            <div class="text-white common-decoration-block">
+                              <p>Gabriel Yoshua</p>
+                            </div>
+                                    <div class="team-social">
+                                      <ul class="socials-contact bg-light-green">
+                                        <li><a class="bg-for-dribbble" href="#"><span class="icon-dribbble"></span></a></li>
+                                        <li><a class="bg-for-behance" href="#"><span class="icon-behance"></span></a></li>
+                                        <li><a class="bg-for-twitter" href="#"><span class="icon-twitter"></span></a></li>
+                                      </ul>
+                                    </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-5 col-md-2">
+                          <div class="mb-5 mb-lg-0">
+                            <div class="img-holder" style="background-image: url('../../img/adik.jpg')"></div>
+                            <div class="text-white common-decoration-block">
+                              <p>Adik N.K.L</p>
+                            </div>
+                                    <div class="team-social">
+                                      <ul class="socials-contact bg-light-green">
+                                        <li><a class="bg-for-dribbble" href="#"><span class="icon-dribbble"></span></a></li>
+                                        <li><a class="bg-for-behance" href="#"><span class="icon-behance"></span></a></li>
+                                        <li><a class="bg-for-twitter" href="#"><span class="icon-twitter"></span></a></li>
+                                      </ul>
+                                    </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-5 col-md-2">
+                          <div class="mb-5 mb-lg-0">
+                            <div class="img-holder" style="background-image: url('../../img/zan.jpg')"></div>
+                            <div class="text-white common-decoration-block">
+                              <p>Zan D.J</p>
+                            </div>
+                                    <div class="team-social">
+                                      <ul class="socials-contact bg-light-green">
+                                        <li><a class="bg-for-dribbble" href="#"><span class="icon-dribbble"></span></a></li>
+                                        <li><a class="bg-for-behance" href="#"><span class="icon-behance"></span></a></li>
+                                        <li><a class="bg-for-twitter" href="#"><span class="icon-twitter"></span></a></li>
+                                      </ul>
+                                    </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-5 col-md-2">
+                          <div class="mb-5 mb-lg-0">
+                            <div class="img-holder" style="background-image: url('../../img/falzal.jpg')"></div>
+                            <div class="text-white common-decoration-block">
+                              <p>Faizal Febri</p>
+                            </div>
+                                    <div class="team-social">
+                                      <ul class="socials-contact bg-light-green">
+                                        <li><a class="bg-for-dribbble" href="#"><span class="icon-dribbble"></span></a></li>
+                                        <li><a class="bg-for-behance" href="#"><span class="icon-behance"></span></a></li>
+                                        <li><a class="bg-for-twitter" href="#"><span class="icon-twitter"></span></a></li>
+                                      </ul>
+                                    </div>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+          </div>
+          <footer>
+            <div class="text-center btn-holder text-white"><a class="btn btn-primary text-uppercase" href="#">Work with us</a></div>
+          </footer>
+        </section>
+        <section class="info common-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                        <div class="title-holder title-decoration text-center mb-4 text-uppercase">
+                          <h4>about us</h4>
+                        </div>
+                <div class="text-center mb-4">
+                  <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Ut aliquam massa nisl quis neque. Suspendisse in orci enim.Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
+                </div>
+                        <div class="team-social">
+                          <ul class="socials-contact bg-light-gray">
+                            <li><a class="bg-for-dribbble" href="#"><span class="icon-dribbble"></span></a></li>
+                            <li><a class="bg-for-facebook" href="#"><span class="icon-facebook"></span></a></li>
+                            <li><a class="bg-for-twitter" href="#"><span class="icon-twitter"></span></a></li>
+                          </ul>
+                        </div>
+              </div>
+              <div class="col-md-4 mb-4 text-center">
+                        <div class="title-holder title-decoration text-center mb-4 text-uppercase">
+                          <h4>recent post</h4>
+                        </div>
+                        <div class="posts">
+                          <div class="clearfix">
+                            <div class="pull-left">
+                              <div class="img-holder" style="background-image: url('../../img/img-1.jpg')"></div>
+                            </div>
+                            <div class="pull-left text-left">
+                              <h4>Lorem Ipsum Dolor Sit Amet.</h4><a class="btn btn-sm text-uppercase text-white align-self-start btn-primary" href="#">magazine</a>
+                            </div>
+                          </div>
+                          <div class="clearfix">
+                            <div class="pull-left">
+                              <div class="img-holder" style="background-image: url('../../img/img-3.jpg')"></div>
+                            </div>
+                            <div class="pull-left text-left">
+                              <h4>Lorem Ipsum Dolor Sit Ametds fsdfs dfsdfsd fdsfsdfsdfs dfsdfsdfsd.</h4><a class="btn btn-sm text-uppercase text-white align-self-start btn-warning" href="#">ui design</a>
+                            </div>
+                          </div>
+                          <div class="clearfix">
+                            <div class="pull-left">
+                              <div class="img-holder" style="background-image: url('../../img/img-6.jpg')"></div>
+                            </div>
+                            <div class="pull-left text-left">
+                              <h4>Lorem Ipsum Dolor Sit Amet.</h4><a class="btn btn-sm text-uppercase text-white align-self-start btn-info" href="#">photography</a>
+                            </div>
+                          </div>
+                          <div class="clearfix">
+                            <div class="pull-left">
+                              <div class="img-holder" style="background-image: url('../../img/img-8.jpg')"></div>
+                            </div>
+                            <div class="pull-left text-left">
+                              <h4>Lorem Ipsum Dolor Sit Amet.</h4><a class="btn btn-sm text-uppercase text-white align-self-start btn-danger" href="#">book</a>
+                            </div>
+                          </div>
+                          <div class="clearfix">
+                            <div class="pull-left">
+                              <div class="img-holder" style="background-image: url('../../img/img-10.jpg')"></div>
+                            </div>
+                            <div class="pull-left text-left">
+                              <h4>Lorem Ipsum Dolor Sit Amet.</h4><a class="btn btn-sm text-uppercase text-white align-self-start btn-warning" href="#">ui design</a>
+                            </div>
+                          </div>
+                        </div>
+              </div>
+              <div class="col-md-4">
+                        <div class="title-holder title-decoration text-center mb-4 text-uppercase">
+                          <h4>contact us</h4>
+                        </div>
+                <div class="row">
+                  <div class="col-lg-offset-2 col-12 col-lg-8">
+                    <ul class="contacts text-center">
+                      <li>
+                        <adress>10044 West 23th Street, Suite 721 New York NY 10010</adress>
+                      </li>
+                      <li><span>Email:<a href="mailto:Username@email.com"> Username@email.com</a></span></li>
+                      <li><span>Phone:<a href="tel:+101234567890">+1 (0) 123 4567 890</a></span></li>
+                      <li><span>Fax:<a href="#"> +1 (0) 321 4567 890</a></span></li>
+                    </ul>
+                  </div>
+                </div>
+                <form class="contact-form" action="#">
+                  <input class="form-control" type="text" placeholder="Your Name..." name="name">
+                  <input class="form-control" type="email" placeholder="Your Email..." name="email">
+                  <textarea class="form-control" placeholder="Your Message..." rows="6" name="message"></textarea>
+                  <button class="btn btn-success text-uppercase" type="submit">send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="seen-on">
+                  <div class="title-holder title-decoration text-center mb-4 text-uppercase">
+                    <h4>as seen on</h4>
+                  </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2 text-center mb-4"><a href="#"><img src="img/CNN.png" alt="CNN"></a></div>
+              <div class="col-lg-2 text-center mb-4"><a href="#"><img src="img/TC.png" alt="TC"></a></div>
+              <div class="col-lg-3 text-center mb-4"><a href="#"><img src="img/BBC.png" alt="BBC"></a></div>
+              <div class="col-lg-5 text-center"><a href="#"><img src="img/NYT.png" alt="The New York times"></a></div>
+            </div>
+          </div>
+        </section>
       </main>
+      <footer>
+        <div class="text-center">
+          <p>made with<span class="icon-heart"></span>by Krisna :)</p>
+        </div>
+      </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -250,7 +405,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/smoothAnchor.js"></script>
   </body>

@@ -1,0 +1,10 @@
+include variables
+include mixins
+
+section.testimonials.common-section
+    .container
+        +heading("testimonials", "Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.")
+        .row
+            .col-md-offset-3.col-lg-6
+                .slider
+                    +addsliderItem(blockquoteItems)

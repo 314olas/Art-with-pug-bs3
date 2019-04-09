@@ -1,0 +1,20 @@
+include variables
+include mixins
+
+
+section.latest-work.common-section
+    .container
+        +heading("our latest work", "Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.","primary")
+        .text-center
+            .btn-group.btn-filter-group(aria-label="filter-button")
+                button.filter.btn.btn-light.active(type='button' data-filter="*") Photography
+                button.filter.btn.btn-light(type='button' data-filter=".nature") Design
+                button.filter.btn.btn-light(type='button' data-filter=".tables") Print
+    .container.common-section
+        .row
+            .col-lg-offset-1.col-lg-10
+                .grid
+                    .custom-block
+    .text-center
+        a.btn.btn-success.btn-arrow(href="#" id="vieMore") View more work
+            span.icon-arrow-right

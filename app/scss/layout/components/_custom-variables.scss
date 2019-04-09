@@ -63,17 +63,32 @@ $green-darker: #2b9b2b;
 $green-dark: #207b20;
 $white-gray: #e6e7e6;
 
+$cite-img-holder-border: #e1e1e1;
+$slick-arrows-color: #e0dfdf;
+
+$footer-bg-meet-team: $green-lighten;
+
+$info-bg: $gray-700;
+$info-heading-color: $gray-200;
+$info-paragraph-color: $gray-300;
+$facebook-bg-color: #1d53aa;
+$social-green-bg-color: #c5e9c5;
+$social-bg-light: $white-gray;
+$form-input-color: #777;
+
+$line-height-base: 1.5;
 
 
+$montserrat: "Montserrat";
 $slick-arrows-color: #e0dfdf;
 
 $font-size-base: 16px;
-$headings-font-family: "Montserrat";
+$headings-font-family: $montserrat;
 
 $brand-primary: $green;
 $brand-success:  $green-darker;
 $brand-info:  $cyan;
-$brand-warning:         #f0ad4e !default;
+$brand-warning: $yellow;
 $brand-danger:  $orange;
 
 $text-color: $gray-500;
@@ -129,7 +144,15 @@ $btn-success-color:              #fff ;
 $btn-success-bg:                 $brand-success;
 $btn-success-border:             transparent;
 
+$btn-info-bg:                    $brand-info;
+
+$btn-warning-bg:                 $brand-warning;
+
+$btn-danger-bg:                  $brand-danger;
+
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius-base:         $border-radius-base !default;
 $btn-border-radius-large:        $border-radius-large !default;
 $btn-border-radius-small:        $border-radius-small !default;
+
+$blockquote-border-color: transparent;

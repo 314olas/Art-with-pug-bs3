@@ -1,20 +1,30 @@
+
+
+$(window).on('load', function () {
+    $preloader = $('.loaderArea');
+    $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(280).fadeOut('slow');
+});
+
 $(document).ready(function () {
+
     $('.slider').slick({
         arrows: true,
         prevArrow: '<button class="slick-prev" type="button"></button>',
         nextArrow: '<button class="slick-next" type="button"></button>'
     });
 
-    $('#navbarSupportedContent').on('show.bs.collapse', function () {
+    $('#navigation').on('show.bs.collapse', function () {
         $('.overlay').addClass('menu-shown');
         
         $('.menu-shown').click(function () {
             $('.overlay').removeClass('menu-shown');
-            $('.navbar-collapse').removeClass('show')
+            $('.navbar-collapse').removeClass('in')
         })
     });
 
-    $('#navbarSupportedContent').on('hide.bs.collapse', function () {
+    $('#navigation').on('hide.bs.collapse', function () {
         $('.overlay').removeClass('menu-shown');
     });
 
@@ -35,12 +45,8 @@ $(document).ready(function () {
     $('.filter').click( function () {
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({filter: filterValue,
-            masonry: {
-                columnWidth: 80
-            }});
+            });
     });
-
-    console.log($(window).width())
 
     var works = [
         {
@@ -111,7 +117,7 @@ $(document).ready(function () {
 
     var elements = [];
     works.map(function (item) {
-        var elem = $("<div class='custom-block col grid-item'></div>");
+        var elem = $("<div class='custom-block grid-item'></div>");
         var a = $("<div class='mb-4'></div>");
         var link = $("<a></a>");
         var img = $("<div class='img-holder'></div>");
